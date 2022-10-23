@@ -11,7 +11,7 @@ const StartButton = () => {
 
     return ( 
         <div>
-            <button className="farm-silence-button" onClick={() => dispatch(initAudio())}>farm silence</button>
+            <button className="farm-silence-button offWhiteText" onClick={() => dispatch(initAudio())}>farm silence</button>
         </div>
         
      );

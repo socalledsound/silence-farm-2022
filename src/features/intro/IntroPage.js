@@ -1,6 +1,6 @@
 import React from 'react'
 import IntroText from './IntroText'
-import StartButton from '../../components/start-button/StartButton'
+import StartButton from './StartButton'
 import './IntroPage.css'
 
 const IntroPage = () => {
@@ -9,7 +9,7 @@ const IntroPage = () => {
     return ( 
         <div className="intro-screen-container">
             {loaded ?
-                    <div className="about-container">
+                    <div className="intro-container">
                          <StartButton />
                          <IntroText />
                        

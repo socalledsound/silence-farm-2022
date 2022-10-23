@@ -29,7 +29,7 @@ const ControlsIcon = () => {
                     <path 
                         key={`control-icon-line-${i}`}
                         d={createLinePath(lines[i])}
-                        stroke={hover ? 'black' : "#ececec"}
+                        stroke={hover ? 'black' : "#eddfc6"}
                         strokeWidth="1"
                     />
                 )
@@ -42,7 +42,7 @@ const ControlsIcon = () => {
                         cy={circle.cy}
                         r={circle.r}
                         fill="transparent"
-                        stroke={hover ? '#63df6d' : "#ececec"}
+                        stroke={hover ? '#63df6d' : "#eddfc6"}
                         strokeWidth="3"
                     />
                     )

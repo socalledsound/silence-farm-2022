@@ -2,7 +2,7 @@
     /* background-color: rgba(114, 51, 9, 0.936); */
     white-space: nowrap;
     /* height: 6rem; */
-    color: rgb(250, 239, 239);
+    color: rgb(237, 223, 198);
     justify-content: space-between;
     /* align-items: flex-start; */
     display: flex;
@@ -57,5 +57,6 @@
     height: 5rem;
     font-weight: 700;
     margin-right: 2rem;
+    /* color: rgb(237, 223, 198); */
     /* margin-top: 1.6rem; */
 }

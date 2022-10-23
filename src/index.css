@@ -58,3 +58,8 @@ canvas {
   outline: none;
   transition: all 0.1s ease 0s;
 }
+
+
+.offWhiteText{
+  color: #eddfc6;
+}
