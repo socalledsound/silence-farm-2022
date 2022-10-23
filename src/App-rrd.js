@@ -9,7 +9,6 @@ import Header from './components/header/Header'
 import MainPage from './pages/main/MainPage.js'
 import About from './pages/about/About'
 import Upload from './pages/upload/UploadPage'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // import Main from './Main'
 // import MainThemed from './pages/main-themed/MainThemed'
 
@@ -33,20 +32,21 @@ const App = () => {
   //   dispatch(addItemsToSoundsInfoArray(soundsInfo))
   // })
 
-return (
+
+  return(
     <BrowserRouter>
+      <>
         <Header started={false}  uploadPageOpen={false}/>
         <Routes>
-            <Route path="/" element={<MainPage />}/>
-            <Route path="about" element={<About />}/>
-            <Route path="upload" element={<Upload />} />
+          <Route path="/" element={<MainPage />}/>
+          <Route path="about" element={About}/>
+          <Route path="upload" element={Upload} />
         </Routes>
+        
+      </>    
+   
     </BrowserRouter>
-
-)
-
-       
-
+  )
 }
 export default App
 

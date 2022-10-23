@@ -1,0 +1,14 @@
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  stroke: #acacac;
+}
+
+.logo:hover {
+  /* background-color: rgb(15, 15, 21); */
+  stroke: #53ff44;
+  color: #dfa362;
+}

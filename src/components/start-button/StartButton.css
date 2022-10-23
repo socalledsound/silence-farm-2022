@@ -1,0 +1,61 @@
+.farm-silence-button {
+  display: inline-block;
+  height: 4rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+  box-sizing: border-box;
+  border: 1px solid rgb(63, 240, 35);
+  border-radius: 0.3rem;
+  /* transition: all 0.2s ease-in-out; */
+  font-weight: 600;
+  background-color: rgba(78, 119, 74, 0.2);
+  color: rgb(255, 255, 255);
+font-weight: 600;
+
+box-shadow: 0px 8px 30px rgba(11, 240, 26, 0.6);
+box-sizing: border-box;
+text-transform: uppercase;
+cursor: pointer;
+outline: none;
+transition: all 0.1s ease 0s;
+}
+
+.farm-silence-button:hover {
+  background-color: rgb(22, 118, 22);
+  border: 3px solid rgb(135, 249, 78);
+  box-shadow: 0px 15px 30px rgba(2, 43, 3, 0.6);
+}
+
+.grow {
+  transition: all 12.2s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+  .farm-silence-button {
+    padding: 1rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.6rem;
+    width: 10rem;
+    height: 5rem;
+  }
+}
+
+
+width: 14rem;
+height: 7rem;
+/* height: 4rem; */
+margin-top: 1.2rem;
+margin-bottom: 0;
+
+padding: 1.2rem;
+border-radius: 0.3rem;
+border: none;
+color: rgb(255, 255, 255);
+font-weight: 600;
+
+box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
+box-sizing: border-box;
+text-transform: uppercase;
+cursor: pointer;
+outline: none;
+transition: all 0.1s ease 0s;

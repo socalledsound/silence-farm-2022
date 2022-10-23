@@ -1,0 +1,10 @@
+const AudioActionTypes = {
+    INIT_AUDIO: 'INIT_AUDIO',
+    TRIG_SOUND : 'TRIG_SOUND',
+    PLAY_ALL_SOUNDS : 'PLAY_ALL_SOUNDS',
+    STOP_PLAYING_SOUND : 'STOP_PLAYING_SOUND',
+    UPDATE_VOLUME : 'UPDATE_VOLUME',
+    UPDATE_PITCH : 'UPDATE_PITCH',
+    PLAY_GRAIN : 'PLAY_GRAIN',
+}
+export default AudioActionTypes

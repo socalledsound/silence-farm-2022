@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* font-family: Verdana, Geneva, sans-serif; */
+  font-family: -apple-system, system-ui, "Segoe UI", "Roboto", "Helvetica Neue",
+    Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+
+  /* background: #202020; */
+  background-size: cover;
+  background-color: #aa3f21;
+  background-image: linear-gradient(0deg, #dd6137 0%, #2b110b 74%);
+}
+
+canvas {
+  z-index: 10;
+}
+
+.big-button {
+  width: 10rem;
+  /* height: 4rem; */
+  margin-top: 0;
+  box-sizing: border-box;
+  padding: 1.2rem;
+  border-radius: 0.3rem;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.1s ease 0s;
+}
+
+.huge-button {
+  width: 14rem;
+  height: 7rem;
+  /* height: 4rem; */
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+
+  padding: 1.2rem;
+  border-radius: 0.3rem;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.1s ease 0s;
 }
