@@ -3,7 +3,7 @@ import 'firebase/compat/firestore';
 import 'firebase/compat/storage';
 import 'firebase/compat/auth';
 import firebaseConfig from './FIREBASE_CONFIG';
-import md5 from 'md5';
+// import md5 from 'md5';
 
 firebase.initializeApp(firebaseConfig);
 
@@ -38,11 +38,10 @@ export const convertUserAuthToMap = async(userAuth) => {
         return null
     }else {
 
-        const { id, avatar, displayName, email } = doc.data();
+        const { id, username, email } = doc.data();
         return ({
             id,
-            avatar, 
-            displayName,
+            username,
             email
         })
     }
@@ -60,15 +59,15 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
     
     // console.log(userAuth, 'in firebase');
     if(!snapShot.exists){
-        const { displayName, email} = userAuth;
+        const { username, email} = userAuth;
         const createdAt = new Date();
        
         try {
             await userRef.set({
-                displayName,
+                username,
                 email,
                 createdAt,
-                avatar: `http://gravatar.com/avatar/${md5(email)}?d=identicon`,
+                // avatar: `http://gravatar.com/avatar/${md5(email)}?d=identicon`,
                 ...additionalData
             })
         } catch(error) {
@@ -102,13 +101,12 @@ export const deleteItemInFirestore  = async(collectionKey, itemToDelete) => {
 export const convertUsersSnapshotToMap = (users) => {
     // console.log(users)
     const transformedUsers = users.docs.map(doc => {
-        const { avatar, displayName, email } = doc.data();
+        const { username, email } = doc.data();
         //console.log(doc.id)
         return {
             
             id: doc.id,
-            avatar, 
-            displayName,
+            username,
             email,
             
         }

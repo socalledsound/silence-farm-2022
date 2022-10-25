@@ -1,31 +1,39 @@
 
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { emailSignInStart } from '../../features/user/userSlice'
+import { emailRegisterStart } from '../../features/user/userSlice'
 import useForm from './useForm'
 import TextField from '../TextField/TextField'
-import styles from './LoginForm.module.css'
-import { validateLogin } from './validateLogin'
-const LoginForm = () => {
+import styles from './RegisterForm.module.css'
+import { validateLogin } from './validateRegister'
+const RegisterForm = () => {
     
     const dispatch = useDispatch()
     const initialFormState = {
+        username: '',
         email: '',
         password: '',
     }
 
     const submitFormData = (data) => {
-        dispatch(emailSignInStart(data))
+        dispatch(emailRegisterStart(data))
     }
 
 
      const { formData, errors, handleInputChange, handleSubmit } = 
                 useForm(initialFormState, validateLogin, (formData) => submitFormData(formData))
-    const { email, password } = formData
+    const {username, email, password } = formData
     // console.log(keys);
     return ( 
         <form onSubmit={handleSubmit} className={styles.formWrapper}>
-
+                      <TextField 
+                            value={username}
+                            required
+                            name='username'
+                            onChange={handleInputChange}
+                            error={errors.name}
+                            placeholder='enter a username'
+                        />
                     <TextField 
                         value={email}
                         required
@@ -52,4 +60,4 @@ const LoginForm = () => {
      );
 }
  
-export default LoginForm;
+export default RegisterForm;

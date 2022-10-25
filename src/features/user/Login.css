@@ -83,6 +83,7 @@
     margin-bottom: 0.2rem;
   }
   
+
   /* .cancel-button {
     background-color: rgb(211, 94, 94);
     margin-bottom: 1.2rem;
@@ -94,6 +95,10 @@
     box-shadow: 0px 15px 20px rgba(179, 6, 3, 0.4);
   }
   
+  .account-exists-button{
+    font-size: 0.6rem;
+    text-decoration: underline;
+  }
   /* 
   .back-button:hover {
     color: rgb(32, 24, 72);

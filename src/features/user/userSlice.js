@@ -65,6 +65,11 @@ export const emailRegisterStart = (formData) => ({
     payload: formData,
 })
 
+export const emailSignInStart = (formData) => ({
+    type: 'EMAIL_SIGNIN_START',
+    payload: formData,
+})
+
 export const { 
     addUser, logOutUser, resetLoginErrors, emailSignInSuccess, 
     setCurrentUser,

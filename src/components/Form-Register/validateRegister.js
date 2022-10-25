@@ -1,6 +1,11 @@
 export const validateLogin = (values) => {
     let errors = {}
 
+    //username
+    if(!values.username){
+        errors.username = 'username required'
+    }
+
     //email
     if(!values.email){
         errors.email = 'email required'
